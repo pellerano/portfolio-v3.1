@@ -741,6 +741,10 @@ button,
 }
 
 @media (min-width: 64em) {
+  .skills {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+  }
   .skills__content h1 {
     font-size: 3rem;
   }

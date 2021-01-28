@@ -66,6 +66,8 @@
 
   //Desktop
   @include breakpoint-up(large) {
+    padding-top: 2rem;
+    padding-bottom: 4rem;
     &__content {
       h1 {
         font-size: 3rem;
