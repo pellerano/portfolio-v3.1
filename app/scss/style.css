@@ -758,9 +758,6 @@ button,
 
 .projects__wd {
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .projects__wd h2 {
@@ -777,6 +774,9 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 1fr;
@@ -810,6 +810,11 @@ button,
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: project-3;
+}
+
+.projects .section-title {
+  margin: 0;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 64em) {
