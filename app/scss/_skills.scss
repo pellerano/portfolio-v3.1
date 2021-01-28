@@ -1,0 +1,75 @@
+.skills {
+  //   display: none;
+  //Mobile/Tablet
+  font-family: $default;
+  background: url("../images/keyboard-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__content {
+    padding: 1rem;
+    width: 90%;
+    margin: auto;
+    h1 {
+      margin: 0;
+      margin-bottom: 1rem;
+    }
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    gap: 0.625rem 1.25rem;
+    grid-template-areas:
+      "education education education"
+      "skill-1 skill-2 skill-3"
+      "skill-4 skill-5 skill-6"
+      "skill-7 skill-8 .";
+  }
+
+  .education {
+    grid-area: education;
+  }
+
+  .skill-1 {
+    grid-area: skill-1;
+  }
+
+  .skill-2 {
+    grid-area: skill-2;
+  }
+
+  .skill-3 {
+    grid-area: skill-3;
+  }
+
+  .skill-4 {
+    grid-area: skill-4;
+  }
+
+  .skill-5 {
+    grid-area: skill-5;
+  }
+
+  .skill-6 {
+    grid-area: skill-6;
+  }
+
+  .skill-7 {
+    grid-area: skill-7;
+  }
+
+  .skill-8 {
+    grid-area: skill-8;
+  }
+
+  //Desktop
+  @include breakpoint-up(large) {
+    &__content {
+      h1 {
+        font-size: 3rem;
+      }
+    }
+  }
+}
