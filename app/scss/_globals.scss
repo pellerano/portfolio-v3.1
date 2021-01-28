@@ -111,19 +111,25 @@ button,
 .card {
   background: $white;
   width: 10rem;
-  height: 10rem;
+  height: 15rem;
   border-radius: 5px;
   box-shadow: $heavy-shadow;
   overflow: hidden;
-  text-align: center;
+  transition: all 200ms ease-in-out;
+  // text-align: center;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 
   h2 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     margin: 0;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
   }
 
   p {
+    padding: 0 1rem;
     font-size: 0.5rem;
   }
 
@@ -136,7 +142,8 @@ button,
 
   @include breakpoint-up(large) {
     width: 20rem;
-    height: 20rem;
+    height: 25rem;
+    margin: 1rem 0;
 
     h2 {
       font-size: 1.5rem;

@@ -126,21 +126,28 @@ button,
 .card {
   background: #fff;
   width: 10rem;
-  height: 10rem;
+  height: 15rem;
   border-radius: 5px;
   -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.31);
           box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.31);
   overflow: hidden;
-  text-align: center;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .card h2 {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   margin: 0;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
 }
 
 .card p {
+  padding: 0 1rem;
   font-size: 0.5rem;
 }
 
@@ -154,7 +161,8 @@ button,
 @media (min-width: 64em) {
   .card {
     width: 20rem;
-    height: 20rem;
+    height: 25rem;
+    margin: 1rem 0;
   }
   .card h2 {
     font-size: 1.5rem;
@@ -756,19 +764,23 @@ button,
   background: #ff8800;
 }
 
-.projects__wd {
+.projects__uxui, .projects__gd {
+  margin-top: 2rem;
+}
+
+.projects__wd, .projects__uxui, .projects__gd {
   width: 100%;
 }
 
-.projects__wd h2 {
+.projects__wd h2, .projects__uxui h2, .projects__gd h2 {
   text-align: center;
 }
 
-.projects__wd h2 span {
+.projects__wd h2 span, .projects__uxui h2 span, .projects__gd h2 span {
   color: #ff8800;
 }
 
-.projects__wd .grid-container {
+.projects__wd .grid-container, .projects__uxui .grid-container, .projects__gd .grid-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -786,30 +798,82 @@ button,
 }
 
 @media (min-width: 64em) {
-  .projects__wd .grid-container {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+  .projects__wd .grid-container, .projects__uxui .grid-container, .projects__gd .grid-container {
     gap: 1rem 3rem;
   }
 }
 
-.projects__wd .project-1 {
+.projects__wd .project-1, .projects__uxui .project-1, .projects__gd .project-1 {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   grid-area: project-1;
 }
 
-.projects__wd .project-2 {
+.projects__wd .project-1 .card-img, .projects__uxui .project-1 .card-img, .projects__gd .project-1 .card-img {
+  background: url("../projects/cris photography/cris_photography_thumbnail.png");
+  background-size: cover;
+}
+
+.projects__wd .project-2, .projects__uxui .project-2, .projects__gd .project-2 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: project-2;
 }
 
-.projects__wd .project-3 {
+.projects__wd .project-2 .card-img, .projects__uxui .project-2 .card-img, .projects__gd .project-2 .card-img {
+  background: url("../projects/travel now/travel_now_thumbnail.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.projects__wd .project-3, .projects__uxui .project-3, .projects__gd .project-3 {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: project-3;
+}
+
+.projects__wd .project-3 .card-img, .projects__uxui .project-3 .card-img, .projects__gd .project-3 .card-img {
+  background: url("../projects/elena joy/elena_joy_thumbnail.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.projects__wd .project-4 .card-img, .projects__uxui .project-4 .card-img, .projects__gd .project-4 .card-img {
+  background: url("../projects/carnaval dominicano/cd_thumbnail.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.projects__wd .project-5 .card-img, .projects__uxui .project-5 .card-img, .projects__gd .project-5 .card-img {
+  background: url("../projects/pc sports/pcsports_thumbnail.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.projects__wd .project-6 .card-img, .projects__uxui .project-6 .card-img, .projects__gd .project-6 .card-img {
+  background: url("../projects/exodia/exodia.png");
+  background-size: 125%;
+  background-position: center;
+}
+
+.projects__wd .project-7 .card-img, .projects__uxui .project-7 .card-img, .projects__gd .project-7 .card-img {
+  background: url("../projects/patron vapes/pv_thumbnail.png");
+  background-size: 130%;
+  background-position: center;
+}
+
+.projects__wd .project-8 .card-img, .projects__uxui .project-8 .card-img, .projects__gd .project-8 .card-img {
+  background: url("../projects/love is in the air/liita_thumbnail.png");
+  background-size: 130%;
+  background-position: center;
+}
+
+.projects__wd .project-9 .card-img, .projects__uxui .project-9 .card-img, .projects__gd .project-9 .card-img {
+  background: url("../projects/Mima's Honey/mh_thumbnail.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #fecf4b;
 }
 
 .projects .section-title {

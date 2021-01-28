@@ -19,7 +19,14 @@
     }
   }
 
-  &__wd {
+  &__uxui,
+  &__gd {
+    margin-top: 2rem;
+  }
+
+  &__wd,
+  &__uxui,
+  &__gd {
     width: 100%;
 
     h2 {
@@ -39,21 +46,79 @@
       grid-template-areas: "project-1 project-2 project-3";
 
       @include breakpoint-up(large) {
-        justify-content: center;
         gap: 1rem 3rem;
       }
     }
 
     .project-1 {
       grid-area: project-1;
+      .card-img {
+        background: url("../projects/cris\ photography/cris_photography_thumbnail.png");
+        background-size: cover;
+      }
     }
 
     .project-2 {
       grid-area: project-2;
+      .card-img {
+        background: url("../projects/travel\ now/travel_now_thumbnail.png");
+        background-size: cover;
+        background-position: center;
+      }
     }
 
     .project-3 {
       grid-area: project-3;
+      .card-img {
+        background: url("../projects/elena\ joy/elena_joy_thumbnail.png");
+        background-size: cover;
+        background-position: center;
+      }
+    }
+
+    .project-4 {
+      .card-img {
+        background: url("../projects/carnaval\ dominicano/cd_thumbnail.png");
+        background-size: cover;
+        background-position: center;
+      }
+    }
+    .project-5 {
+      .card-img {
+        background: url("../projects/pc\ sports/pcsports_thumbnail.png");
+        background-size: cover;
+        background-position: center;
+      }
+    }
+    .project-6 {
+      .card-img {
+        background: url("../projects/exodia/exodia.png");
+        background-size: 125%;
+        background-position: center;
+      }
+    }
+    .project-7 {
+      .card-img {
+        background: url("../projects/patron\ vapes/pv_thumbnail.png");
+        background-size: 130%;
+        background-position: center;
+      }
+    }
+    .project-8 {
+      .card-img {
+        background: url("../projects/love\ is\ in\ the\ air/liita_thumbnail.png");
+        background-size: 130%;
+        background-position: center;
+      }
+    }
+    .project-9 {
+      .card-img {
+        background: url("../projects/Mima's\ Honey/mh_thumbnail.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-color: #fecf4b;
+      }
     }
   }
 
