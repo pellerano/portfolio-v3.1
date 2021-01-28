@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hermes Pellerano | Front-End Web Developer</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../scss/style.css" />
+    <script
+      src="https://kit.fontawesome.com/5a360a2087.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="overlay has-fade"></div>
+      <nav class="container flex flex-jc-sb flex-ai-c">
+        <a href="/" class="header__logo">Pellerano</a>
+        <a href="#" id="btnHamburger" class="header__toggle hide-for-desktop">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+        <div class="header__links hide-for-mobile">
+          <a href="../../../index.html">Home</a><a href="#">About</a
+          ><a href="#">Skills</a><a href="#">Projects</a>
+        </div>
+        <button type="button" class="hide-for-mobile header__cta">
+          Contact
+        </button>
+      </nav>
+      <div class="header__menu has-fade">
+        <a href="../../../index.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Skills</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+      </div>
+    </header>
+    <div class="project">
+      <div class="project__body">
+        <h1>Punta Cana Sports</h1>
+        <div class="underline"></div>
+      </div>
+      <div class="project__img">
+        <div
+          class="img"
+          style="
+            background: url('../pc\ sports/pcsports_thumbnail.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+          "
+        ></div>
+      </div>
+      <div class="project__description_header">
+        <h1>Description</h1>
+        <div class="underline"></div>
+      </div>
+      <p>
+        <span>Punta Cana Sports</span> is an enterprise focused on organizing
+        sporting events in the Dominican Republic. We work with youth
+        organizations around the country to plan a complete experience including
+        game days, lodging, meals and activities.
+      </p>
+      <div class="project__cta">
+        <a href="./Punta Cana Sports.pdf" target="_blank" class="site-btn"
+          >View Design</a
+        >
+      </div>
+    </div>
+    <footer>
+      <p>Hermes Pellerano &copy; 2021</p>
+    </footer>
+  </body>
+  <script src="./app.js"></script>
+</html>
