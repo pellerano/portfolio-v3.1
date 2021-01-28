@@ -217,6 +217,21 @@ button,
   background-size: cover;
 }
 
+@media (min-width: 64em) {
+  .card {
+    width: 20rem;
+    height: 20rem;
+  }
+  .card h2 {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+  }
+  .card p {
+    font-size: 0.9rem;
+    padding: 0 1rem;
+  }
+}
+
 .header__menu {
   margin-top: 1rem;
   background: #fff;
@@ -743,6 +758,9 @@ button,
 
 .projects__wd {
   width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .projects__wd h2 {
